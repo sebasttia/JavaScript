@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
+        body {
+            background-image: linear-gradient(to right, #01415B, #005148, #019587);
+        }
         div#area{
+            margin: 50px;
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(42, 139, 42);
             color: white;
@@ -18,8 +22,28 @@
     </style>
 </head>
 <body>
-    <div id="area">
-        Interaja . . . 
-    </div>
+   <div id="area" >
+    Interaja . . .
+   </div>
+
+   <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseout', sair)
+    a.addEventListener('mouseenter', entrar)
+    function clicar() {
+        a.innerText = 'Clicou !'
+        a.style.backgroundColor = 'yellow'
+    }
+    function entrar() {
+        a.innerText = 'Entrou !'
+        a.style.backgroundColor = 'red'
+      
+    }
+    function sair() {
+        a.innerText = 'Saiu !'
+        a.style.backgroundColor = 'green'
+    }
+   </script>
 </body>
 </html>
