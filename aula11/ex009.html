@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estragerio?</title>
+</head>
+<body>
+    <h1>Qual país voce é</h1>
+    <label for="pais"></label>
+            País que veio <input type="number" name="pais" id="pais">
+    <input type="button" value="verificar">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular( ) {
+            var pais = window.document.querySelector('pais')
+            var pais = Number(pais.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade `
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+
+    </script>
+</body>
+</html>
