@@ -6,21 +6,36 @@
     <title>Modelo de Exercício</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Título</h1>
-    </header>
-    <section>
-        <div>
-            Testando . . .
-        </div>
-        <div>
-            Olá !
-        </div>
-    </section>
-<footer>
-    <p>&copy; Sebastian Rocha</p>
-</footer>
-<script src="script.js"></script>
+<body onload="carregar">
+        <header>
+            <h1>Hora do Dia</h1>
+        </header>
+        <section>
+            <div id="msg">
+                Aqui vai aparecer a mensdgem . . .
+            </div>
+            <div id="foto">
+                <img id="imagem" src="Nova pasta/manha.png" alt="Foto do dia">
+            </div>
+        </section>
+    <footer>
+        <p>&copy; Sebastian Rocha</p>
+    </footer>
+    <script>
+            function car() {
+            var msg = window.document.getElementById('msg')
+            var img = window.document.getElementById('imagem')
+            var data = new Date()
+            var hora = data.getHours()
+            msg.innerHTML = `Agora são ${hora} horas.`
+            if (hora >= 0 && hora < 12) {
+                img.src = 'manha.png'
+            } else if (hora >= 12 && hora < 18) {
+                img.src = 'tarde.png'
+            } else {
+                img.src = 'noite.png'
+            }
+        }
+    </script>
 </body>
 </html>
