@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-
-}
-
 body {
  background-color: seagreen;
  font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +8,10 @@ body {
 header {
 color: white;
 text-align: center;
+}
+
+h1 {
+    color: black;
 }
 
 section {
@@ -27,8 +27,17 @@ div {
     
 }
 
+div#res {
+
+}
+
 footer {
-    color: white;
+    color: black;
+    margin: auto;
     text-align: center;
+    width: 530px;
     font-style: italic;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 8px 0.5px
+   
 }
