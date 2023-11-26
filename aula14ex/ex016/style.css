@@ -18,9 +18,9 @@ section {
  background-color: white;
  border-radius: 7px;
  padding: 15px;
- width: 600px;
+ width: 500px;
  margin: auto;
- text-align: center;
+
 }
 
 div {
@@ -28,7 +28,12 @@ div {
 }
 
 footer {
-    color: white;
+    color: black;
+    margin: auto;
     text-align: center;
+    width: 530px;
     font-style: italic;
+    border-radius: 3px;
+    box-shadow: 0.5px 0.5px 3px 0.5px
+   
 }
